@@ -1,57 +1,54 @@
-🚗 Prestige Motors - API
-Welcome to the Prestige Motors API! This is the backend of a car rental and sales platform where users can browse vehicles, make bookings, and complete payments securely. Built with ASP.NET Core 8 and designed using a clean multi-layered architecture.
+# 🚗 Prestige Motors - API
 
-🧱 Project Architecture
+Welcome to the **Prestige Motors** API! This is the backend of a car rental and sales platform where users can browse vehicles, make bookings, and complete payments securely. Built with ASP.NET Core 8 and designed using a clean multi-layered architecture.
+
+---
+
+## 🧱 Project Architecture
+
 This API follows a clean architecture, split into the following layers:
 
-Domain Layer: Contains core business models and DTOs.
+- **Domain Layer**: Contains core business models and DTOs.
+- **Logic Layer**: Contains all business logic and services.
+- **Infrastructure Layer**: Handles database access and external integrations.
+- **API Layer**: Exposes RESTful endpoints to clients.
 
-Logic Layer: Contains all business logic and services.
+---
 
-Infrastructure Layer: Handles database access and external integrations.
+## ⚙️ Technologies Used
 
-API Layer: Exposes RESTful endpoints to clients.
+- .NET 8 / ASP.NET Core Web API
+- Entity Framework Core
+- SQL Server
+- JWT Authentication
+- Google Authentication
+- AutoMapper
+- Dependency Injection
+- CORS Configuration
 
-⚙️ Technologies Used
-.NET 8 / ASP.NET Core Web API
+---
 
-Entity Framework Core
+## 📁 Project Structure
 
-SQL Server
+PrestigeMotors/ │ ├── PrestigeMotors.Domain/ # Models and DTOs ├── PrestigeMotors.Logic/ # Business logic and interfaces ├── PrestigeMotors.Infrastructure/ # Database, repositories ├── PrestigeMotors.API/ # Controllers, Program.cs, middleware └── PrestigeMotors.Migration/ # Database migrations
 
-JWT Authentication
-
-Google Authentication
-
-AutoMapper
-
-Dependency Injection
-
-CORS Configuration
-
-📁 Project Structure
-bash
+markdown
 Copier
 Modifier
-PrestigeMotors/
-│
-├── PrestigeMotors.Domain/         # Models and DTOs
-├── PrestigeMotors.Logic/          # Business logic and interfaces
-├── PrestigeMotors.Infrastructure/ # Database, repositories
-├── PrestigeMotors.API/            # Controllers, Program.cs, middleware
-└── PrestigeMotors.Migration/      # Database migrations
-🚀 Getting Started
-Prerequisites
-.NET SDK 8
 
-SQL Server
+---
 
-Visual Studio / VS Code
+## 🚀 Getting Started
 
-Clone the Repository
-bash
-Copier
-Modifier
+### Prerequisites
+
+- [.NET SDK 8](https://dotnet.microsoft.com/download)
+- [SQL Server](https://www.microsoft.com/en-us/sql-server/)
+- [Visual Studio / VS Code](https://visualstudio.microsoft.com/)
+
+### Clone the Repository
+
+```bash
 git clone https://github.com/your-username/PrestigeMotors.git
 cd PrestigeMotors
 Configure the Database
@@ -89,21 +86,22 @@ Visit: https://localhost:5001/swagger to explore the API.
 🗃️ Clean DTO-Model Mapping via AutoMapper
 
 🧪 API Endpoints
-Use Swagger UI to interact with all endpoints. Examples include:
+Use Swagger UI to interact with all endpoints. Example endpoints:
 
-/api/auth/login
+POST /api/auth/login
 
-/api/auth/google-login
+POST /api/auth/google-login
 
-/api/cars
+GET /api/cars
 
-/api/bookings
+POST /api/bookings
 
-/api/users
+GET /api/users/{id}
 
 💡 Contribution
-PRs are welcome! Please ensure code follows clean architecture principles and includes unit tests.
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Make sure to follow clean architecture principles and include relevant unit/integration tests.
 
 📃 License
-This project is licensed under the MIT License.# PM
-A car rental and sales web app built with React and ASP.NET Core.
+This project is licensed under the MIT License.
