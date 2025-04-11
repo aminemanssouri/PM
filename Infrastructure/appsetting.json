@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=.;Database=Perstige_MotorsDB;User Id=Motors;Password=1234567890;TrustServerCertificate=True;"
+  }
+}

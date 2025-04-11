@@ -1,0 +1,6 @@
+@PM_Interface_HostAddress = http://localhost:5286
+
+GET {{PM_Interface_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
